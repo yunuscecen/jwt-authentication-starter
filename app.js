@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(verifyToken);
 
 // ## Route Middlewares
-app.use('/', authRoute);
+app.use(authRoute);
 
 
 // Connect to DB
